@@ -4,7 +4,7 @@
 # Copyright (C) 2020-2021 Adithya R.
 
 SECONDS=0 # builtin bash timer
-ZIPNAME="BatanesFeels™-spes-$(date '+%Y%m%d-%H%M').zip"
+ZIPNAME="BatanesFeels™-KSU-spes-$(date '+%Y%m%d-%H%M').zip"
 TC_DIR="/home/warudo/Desktop/toolchains/aosp-clang"
 GCC_DIR="/home/warudo/Desktop/toolchains/eva-gcc"
 AK3_DIR="/home/warudo/Desktop/toolchains/AnyKernel3"
