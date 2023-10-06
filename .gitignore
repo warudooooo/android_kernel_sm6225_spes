@@ -143,4 +143,7 @@ KernelSU/
 out/
 build.log
 build.sh
-run.sh
+1.sh
+2.sh
+1n.sh
+2n.sh
