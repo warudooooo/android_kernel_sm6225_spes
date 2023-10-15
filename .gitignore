@@ -138,3 +138,12 @@ kernel/configs/android-*.cfg
 
 # vendor device tree directories
 arch/arm64/boot/dts/vendor/
+
+KernelSU/
+out/
+build.sh
+1.sh
+2.sh
+1n.sh
+2n.sh
+drivers/misc/kprofiles/
