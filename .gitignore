@@ -140,10 +140,10 @@ kernel/configs/android-*.cfg
 arch/arm64/boot/dts/vendor/
 
 KernelSU/
+drivers/misc/kprofiles/
 out/
 build.sh
-1.sh
 2.sh
-1n.sh
 2n.sh
-drivers/misc/kprofiles/
+spes.txt
+spesn.txt
