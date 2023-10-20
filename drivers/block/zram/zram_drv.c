@@ -1840,13 +1840,19 @@ static ssize_t disksize_store(struct device *dev,
 	int err;
 
 #ifndef CONFIG_ZRAM_SIZE_OVERRIDE
-	disksize = memparse(buf, NULL);
-	if (!disksize)
-		return -EINVAL;
-
+    disksize = memparse(buf, NULL);
+    if (!disksize) {
+        return -EINVAL;
+    }
 #else
-	disksize = (u64)SZ_1G * CONFIG_ZRAM_SIZE_OVERRIDE;
-	pr_info("Overriding zram size to %li", disksize);
+    u64 ram_size = totalram_pages * PAGE_SIZE;
+    if (ram_size > (u64)4294967296) {
+        disksize = (u64)3758096384;
+        pr_info("Setting zram size to 3.5GB");
+    } else {
+        disksize = (u64)2684354560;
+        pr_info("Unknown RAM size, setting zram size to 2.5GB");
+    }
 #endif
 
 	down_write(&zram->init_lock);
