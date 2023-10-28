@@ -144,7 +144,6 @@ kernel/configs/android-*.cfg
 arch/arm64/boot/dts/vendor/
 
 KernelSU/
-drivers/misc/kprofiles/
 out/
 build
 test.sh
