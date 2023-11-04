@@ -1,4 +1,4 @@
-# Andromeda IX v2.3.2 - beta
+# Andromeda IX v2.3.3 - beta
 CONFIG_LOCALVERSION="-Andromeda-IX-v2.3-KSU"
 CONFIG_IRQ_SBALANCE=y
 CONFIG_SBALANCE_EXCLUDE_CPUS="3,6,7"
